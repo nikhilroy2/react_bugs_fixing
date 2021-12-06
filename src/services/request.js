@@ -3,7 +3,7 @@ import { IS_LOCAL } from '../utils/config';
 
 // TEST API HOST
 export const API_HOST = IS_LOCAL
-  ? 'https://example.dev/admin/api'
+  ? 'https://reallifeseo.com/clientdemo/codeapi'
   : `${window.location.protocol}//${window.location.host}/admin/api`;
 
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
