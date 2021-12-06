@@ -1,0 +1,25 @@
+.exportTable {
+    margin-top: 15px;
+
+    th {
+        padding: 8px;
+    }
+
+    .exportDownloadButton {
+        text-align: end;
+        padding-right: 15px;   
+        
+        a {
+            line-height: 1.5 !important;
+
+            &:focus,
+            &:active {
+                outline: none !important;
+            }
+        }
+    }
+
+    * {
+        line-height: 1.42857143 !important;
+    }
+}

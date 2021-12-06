@@ -1,0 +1,38 @@
+@import '../../../assets/scss/colors.scss';
+
+.dark-mode {
+    .modal-header,
+    .modal-footer {
+        border-color: #3f4149;
+    }
+
+    .modal-dialog .modal-delete-btn {
+        color: #1e73d0 !important;
+    }
+    
+    .modal-header {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .modal-footer {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        .btn.btn-primary {
+            span {
+                background-color: #1e73d0 !important;
+            }
+
+            &:hover {
+                span {
+                    background-color: #1284ff !important;
+                }
+            }
+        }
+    }
+
+    .modal-body {
+        border-radius: 8px !important;
+    }
+}

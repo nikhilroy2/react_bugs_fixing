@@ -1,0 +1,26 @@
+.customModalFooter * {
+    float: left;
+    line-height: 1.42857143;
+}
+.addTicketSpinner {
+    margin: 3px 3px 0 0;
+}
+
+.modal-footer .btn + .btn {
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+.modal-delete-btn {
+    position: relative;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 900px) {
+    .modal-md .modal-dialog {
+        width: 450px;
+    }
+}

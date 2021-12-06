@@ -1,0 +1,58 @@
+@media (max-width: 768px) {
+    .modal-yesno {
+        & .modal-dialog {
+            width: 210px !important;
+            left: 50% !important;
+            margin-left: -100px !important;
+            top: 45% !important;
+            margin-top: -50px !important;
+        }
+    }
+    .extended-yesno {
+        & .modal-dialog {
+            width: 176px !important;
+        }
+    }
+}
+
+.modal-yesno {
+    & .modal-dialog {
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        margin-left: -150px;
+        margin-top: -50px;
+        width: 300px;
+    }
+}
+
+.confirm-btn-yes {
+    margin-right: 5px;
+}
+
+.dark-mode {
+    .confirm-btn-yes {
+        span {
+            background-color: #1e73d0 !important;
+        }
+
+        &:hover {
+            span {
+                background-color: #1284ff !important;
+            }
+        }
+
+        &.btn-danger {
+            span {
+                background-color: #ff5e5e !important;
+            }
+
+            &:hover {
+                background-color: #1284ff !important;
+                span {
+                    background-color: #1284ff !important;
+                }
+            }
+        }
+    }
+}

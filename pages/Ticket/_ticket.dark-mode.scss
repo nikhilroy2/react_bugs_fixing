@@ -1,0 +1,64 @@
+@import '../../assets/scss/colors.scss';
+
+.dark-mode {
+
+  .ticketMessage__body__message_blue {
+      background: #3f434b;
+      box-shadow: none;
+
+        * {
+          background: #3f434b;
+        }
+  }
+
+  .ticketMessage__body__message_green {
+      background: $blue;
+      box-shadow: none;
+
+      * {
+          background: $blue;
+      }
+  }
+
+  .self::before {
+    border-top-color: $blue;
+  }
+
+  .notSelf::before {
+    border-top-color: #3f434b;
+  }
+
+  .ticketMessage__head__date {
+    color: #878ea0;
+  }
+  .ticketMessage__footer__status {
+    color: #878ea0;
+  }
+
+  .panel-heading {
+    border-color: #3f4149;
+    background: #27282d;
+
+    .details__header__title {
+        color: $white;
+    }
+
+    .details__header__id {
+        color: #878ea0;
+    }
+  }
+
+  .ticketMessage__footer .btn-link:hover,
+  .tickets__subject a:hover {
+    text-decoration: none !important;
+    color: #1284ff;
+  }
+
+  #dropdown-submenu-btn {
+    border: none;
+  }
+
+  .details_backButton:hover {
+    text-decoration: none !important;
+  }
+}

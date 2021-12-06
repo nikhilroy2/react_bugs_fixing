@@ -1,0 +1,90 @@
+.copyRatesForm {
+
+    // .dropdown-menu {
+    //     max-height: 314px;
+    // }
+
+    .copyRates__fromInput {
+        display: block;
+        
+        button {
+            width: 100%;
+        }
+
+        &::before {
+            content: ' ';
+            position: absolute;
+            z-index: 1000;
+            border-top: 4px dashed;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+            top: 15px;
+            right: 12px;
+        }
+
+    }
+
+    .dropdown-menu__filters-for-custom {
+        max-width: 100% ;
+        min-width: 100% ;
+        transform: translateY(33px);
+    }
+
+    .copyRates__toInput {
+        color: #555;
+    }
+
+    .divider,
+    .dropdown-header {
+        display: none;
+    }
+
+    .menu-item {
+        a {
+            span:first-child {
+                display: none;
+            }
+        }
+    }
+
+    .notSelected button,
+    .notSelected.copyRates__fromInput {
+        color: #999 !important;
+    }
+
+    .dropdown-menu__filters-for-custom .dropdown-menu__inner {
+        max-height: 260px;
+    }
+
+    .copyRates__fromInput.open {
+        & > button {
+            border-color: #adadad !important;
+            background-color: #e6e6e6 !important;
+        }
+    }
+}
+
+.copyRates__arrow {
+    position: absolute;
+    bottom: 8px;
+    right: -7px;
+    z-index: 100;
+}
+
+.copyRates__fromCol {
+    position: relative;
+}
+
+@media screen and (max-width: 991px) {
+    .copyRates__arrow {
+        display: none;
+    }
+
+    .copyRates__fromCol {
+        margin-bottom: 16px;
+    }
+
+    .copyRates__toInput {
+        margin-bottom: -15px;
+    }
+}

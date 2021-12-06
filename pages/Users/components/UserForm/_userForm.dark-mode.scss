@@ -1,0 +1,28 @@
+.dark-mode {
+    .checkboxInvisible {
+        color: #464951!important;
+    }
+
+    .inputGenerate__input[disabled] {
+        background-color: #1b1c20 !important;
+        color: #464951 !important;
+    }
+
+    .inputGenerate__input + span:hover {
+        border-color: rgba(103, 107, 118, 0.5) !important;
+    }
+
+    .userFormPayments {
+        .checkbox + label {
+            margin-left: 4px;
+        }
+
+        .checkbox.checkboxInvisible input {
+            background-color: #2e3036 !important;
+
+            &::after {
+                color: rgba(103, 107, 118, 0.5);
+            }
+        }
+    }
+}

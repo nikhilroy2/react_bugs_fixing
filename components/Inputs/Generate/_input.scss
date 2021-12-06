@@ -1,0 +1,36 @@
+.inputGenerateGroup .input-group-addon {
+    cursor: pointer;
+    background: #fff;
+}
+
+.inputGenerate__input {
+    svg {
+        width: 145px !important;
+    }
+}
+
+.inputGenerateGroup .input-group-addon:active {
+    background-color: lightgray;
+}
+
+.inputGenerate__input {
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.disabledButton {
+    cursor: not-allowed !important;
+
+    &:active,
+    &:hover {
+        background-color: #eeeeee !important;
+    }
+}
+
+.inputGenerateGroup .input-group-addon:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}

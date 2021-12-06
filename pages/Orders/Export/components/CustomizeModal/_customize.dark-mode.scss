@@ -1,0 +1,57 @@
+.dark-mode {
+    .customize__li {
+        background-color: #1b1c20 !important;
+
+        &:hover {
+            border: solid 1px #3f4149 !important;
+        }
+
+        input {
+            background-color: #2b2d33 !important;
+            margin-right: 4px !important;
+        }
+    }
+
+    .export__wrapper.export__wrapper-orders {
+        .export__col {
+            .dropdown {
+                &.open {
+                    .dropdown-toggle {
+                        color: #dfe0e1;
+                        background-color: #222327;
+                        border-color: rgba(103, 107, 118, 0.5);
+
+                        span {
+                            background-color: transparent;
+                        }
+                    }
+
+                    .dropdown-menu {
+                        .select__menuItem {
+                            a {
+                                &:not(:hover):focus {
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .export__col-modal {
+                &:hover {
+                    color: #1284ff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@-moz-document url-prefix() {
+    .dark-mode .customize__checkbox {
+        input {
+            top: 1px;
+        }
+    }
+}

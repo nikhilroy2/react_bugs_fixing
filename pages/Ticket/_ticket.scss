@@ -1,0 +1,202 @@
+.list-group-item {
+    padding: 15px;
+}
+
+.list-group-fix {
+    margin-bottom: -5px;
+}
+
+.details_form textarea {
+    resize: vertical !important;
+    margin-top: 0;
+    min-height: 114px;
+}
+
+.details_form {
+    margin-bottom: -8px !important;
+}
+
+.detailsCol {
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 850px;
+    margin-top: 6px;
+
+    .panel {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+}
+
+.detailsCol button:focus,
+.details a {
+    outline: none !important;
+    text-decoration: none;
+}
+
+.ticketMessage__footer .btn-group>.btn {
+    padding: 1px 7px;
+}
+
+.details__locked {
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 340px) {
+    .details__locked {
+        font-size: 11px;
+    }
+}
+
+.details_button {
+    margin-top: 8px;
+    margin-right: 4px;
+}
+
+body:not(.dark-mode) .details__header {
+    background-color: #f9f9f9 !important;
+}
+
+.details__header {
+    padding: 15px;
+    position: relative;
+    padding-right: 85px;
+}
+
+.details__header__title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.details__header__id {
+    display: inline;
+    vertical-align: middle;
+}
+
+.details__header__id {
+    font-size: 16px;
+    color: #a5a5a5;
+    font-weight: 500;
+    top: 17px;
+    position: absolute;
+    white-space: nowrap;
+    right: 15px;
+}
+
+.detailsInfoGlyph {
+    vertical-align: -2px;
+    margin-left: 3px;
+}
+
+.detailsButtons {
+    button {
+        line-height: 1.42857143;
+    }
+
+    ul {
+        left: -100px;
+    }
+}
+
+.details_form {
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.details_textarea {
+    resize: vertical;
+    margin: 6px 0 5px 0;
+}
+
+.lock {
+    max-width: 100%;
+}
+
+.editMessageForm textarea {
+    resize: vertical;
+}
+
+.details_rightBtnCol {
+    height: 0 !important;
+    margin: 0 !important;
+}
+
+.details_dropdownRight {
+    margin-top: -45px;
+}
+
+@media screen and (max-width: 992px) {
+    .detailsCol {
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .details_dropdownRight {
+        float: left !important;
+        margin-top: 0;
+    }
+
+    .details_rightBtnCol {
+        height: auto !important;
+    }
+}
+
+.details_button .dropdown,
+.details_button .dropdown button {
+    width: 26px;
+}
+
+.details_button .dropdown button .caret {
+    position: relative;
+    right: 4px;
+}
+
+.actionsButton {
+    margin-top: 8px;
+
+    &+ul {
+        left: 0px;
+    }
+}
+
+.details_buttonRight+ul {
+    min-width: 135px !important;
+}
+
+.detailsCol {
+    button {
+        padding: 8px 12px;
+    }
+
+}
+
+.details_buttonRight {
+    i {
+        margin-right: 6px;
+    }
+}
+
+.details_dropdownRight {
+    float: right;
+    margin-right: -5px;
+}
+
+.detailsButtons {
+    white-space: nowrap;
+}
+
+.details_backButton {
+    margin-bottom: 10px;
+    margin-left: 2px;
+
+    span {
+        font: icon;
+        position: absolute;
+        left: 15px;
+        font-weight: bold;
+    }
+}
