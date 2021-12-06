@@ -1,0 +1,235 @@
+@media (max-width: 768px) {
+    .nav-tabs__unread {
+        float: left !important;
+
+        .btn-link {
+            padding: 7px 0 !important;
+            margin-bottom: 10px;
+        }
+    }
+
+    .nav-tabs__search {
+        width: 100%;
+    }
+
+    .users {
+        &__head {
+            height: 37px;
+        }
+    }
+}
+
+.table {
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.table > thead > tr > th {
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+.table > tbody > tr > td {
+    white-space: nowrap;
+}
+
+.table > thead > tr > th.check-all {
+    padding: 6px;
+}
+
+.btn-xs {
+    & .badge {
+        top: -1px;
+    }
+}
+
+@-moz-document url-prefix() {
+    .users__head .check-all {
+        &__box {
+            top: -4px !important;
+        }
+    }
+}
+
+.users__head .check-all {
+    &__box {
+        padding: 5px 5px 5px 5px;
+        border: 1px solid #ddd;
+        line-height: 0;
+        z-index: 2;
+        position: relative;
+        top: -3px;
+        border-radius: 4px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .btn {
+        line-height: 1.42857143;
+    }
+
+    .btn-xs {
+        font-size: 14px;
+    }
+
+    &__show {
+        .users__mass-act {
+            z-index: 1;
+            opacity: 1;
+        }
+
+        .check-all__box {
+            border-right-color: transparent;
+            border-radius: 4px 0 0 4px;
+
+            input[type='checkbox'] {
+                width: 13px;
+                height: 13px;
+            }
+        }
+    }
+
+    input[type='checkbox'] {
+        margin-top: 0;
+    }
+}
+
+.td-caret {
+    padding-right: 15px !important;
+    width: 24px;
+}
+
+.btn-xs,
+.btn-group-xs > .btn {
+    padding: 1px 7px;
+}
+
+.users {
+    &__head {
+        height: 40px;
+    }
+
+    &__skype {
+        white-space: normal !important;
+        word-break: break-all !important;
+        max-width: 200px;
+    }
+
+    &-table__rates-btn {
+        cursor: pointer;
+        box-shadow: none;
+        opacity: 0.65;
+
+        &:hover {
+            background-color: #fff;
+            border-color: #ccc;
+        }
+
+        &:focus {
+            outline: none;
+            background-color: #fff;
+            border-color: #ccc;
+        }
+    }
+
+    &__unread {
+        font-weight: 700;
+    }
+
+    &__unread {
+        font-weight: 700;
+    }
+
+    &__status {
+        padding: 0 !important;
+        vertical-align: middle !important;
+
+        .customFilterDropdownButton {
+            padding: 3px 12px;
+            line-height: 1.42857143;
+        }
+    }
+
+    &__check {
+        margin-left: 4px !important;
+    }
+
+    &__edit-btn {
+        margin-left: 8px;
+        padding: 1px 7px;
+    }
+
+    &__mass-act {
+        position: absolute;
+        opacity: 0;
+        left: 1px;
+        right: 0;
+        top: 1px;
+        z-index: -1;
+        background: #fff;
+        height: 38px;
+        -webkit-transition: opacity 0.3s linear;
+        -moz-transition: opacity 0.3s linear;
+        -ms-transition: opacity 0.3s linear;
+        -o-transition: opacity 0.3s linear;
+        transition: opacity 0.3s linear;
+    }
+}
+
+.mass-act {
+    &__list {
+        padding: 0;
+        list-style: none;
+        float: left;
+        margin: 5px 0 0 0;
+        border: 1px solid #ddd;
+        position: relative;
+        left: 28px;
+        height: 24px;
+        border-left: none;
+        border-radius: 0 4px 4px 0;
+
+        .open > .dropdown-toggle.btn-default {
+            border-left: 1px solid #ddd;
+        }
+
+        & > li {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 400;
+
+            & + li {
+                margin-left: 15px;
+            }
+
+            &:first-child {
+                padding-left: 10px;
+            }
+        }
+
+        & .btn-default {
+            border: none;
+            border-left: 1px solid #ddd;
+            height: 22px;
+            border-radius: 0 3px 3px 0;
+            margin-top: -1px;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+
+.grey {
+    color: #c1c1c1;
+}
+
+.users-table__btnSuspended {
+    cursor: pointer;
+    box-shadow: none;
+    opacity: 0.65;
+}

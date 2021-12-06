@@ -1,0 +1,299 @@
+.caret-filter {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -2px;
+}
+
+.custom-button {
+    width: 125px;
+    text-align: left;
+}
+
+.menu-item-no_result {
+    a {
+        padding: 3px 20px 3px 8px !important;
+        background: #f5f5f5;
+    }
+}
+
+.dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #777;
+    white-space: nowrap;
+
+    &-select {
+        a {
+            background-color: #e6e6e6;
+            padding: 3px 20px !important;
+            cursor: not-allowed;
+            color: #333;
+
+            &:hover {
+                background-color: #e6e6e6 !important;
+            }
+        }
+
+        &.not-empty {
+            a {
+                color: #777 !important;
+                background-color: transparent;
+
+                &:hover {
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+}
+
+.add-rates__select-btn {
+    .dropdown-menu {
+        &__filters {
+            min-width: 342px;
+
+            &-for-custom {
+                min-width: 650px;
+                min-height: 30px;
+                overflow: hidden;
+
+                & .dropdown-menu__inner {
+                    min-height: 30px;
+                    overflow-y: auto;
+
+                    & > .menu-item > a {
+                        padding: 3px 20px;
+                        white-space: normal;
+                        padding-right: 55px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    &__filters {
+        min-width: 342px;
+
+        &-for-custom {
+            min-width: 650px;
+            max-height: 785px;
+            overflow: hidden;
+            min-height: 30px;
+
+            & .dropdown-menu__inner {
+                max-height: 731px;
+                overflow-y: auto;
+                min-height: 30px;
+
+                & > .menu-item > a {
+                    padding: 3px 20px;
+                }
+            }
+        }
+    }
+
+    &__input {
+        padding: 4px 8px;
+        margin-bottom: 0;
+    }
+
+    &__inner {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-height: 279px;
+        overflow-y: auto;
+
+        .menu-item {
+            position: relative;
+
+            &.disabled {
+                a {
+                    cursor: not-allowed;
+                    color: #c1c1c1;
+
+                    &:hover {
+                        color: #c1c1c1;
+                        background-color: transparent;
+                    }
+
+                    &.active {
+                        cursor: not-allowed;
+                        color: #c1c1c1;
+                        background-color: transparent !important;
+
+                        &:hover {
+                            color: #c1c1c1;
+                            background-color: transparent !important;
+                        }
+
+                        .select-id {
+                            border: 1px solid #ddd;
+                        }
+                    }
+                }
+            }
+        }
+
+        .selected {
+            .glyphicon.glyphicon-ok {
+                display: inline-block;
+                position: absolute;
+                right: 15px;
+                margin-top: 4px;
+            }
+        }
+
+        .select-id {
+            border: 1px solid #ddd;
+            background: 0 0;
+            min-width: 30px;
+            display: inline-block;
+            padding: 0.2em 0.6em 0.3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: 1px;
+            border-radius: 0.25em;
+            margin-right: 4px;
+        }
+
+        .select-price {
+            position: absolute;
+            right: 15px;
+            top: 3px;
+        }
+    }
+
+    &__btn-group {
+        width: 100%;
+        padding: 0 8px 4px;
+
+        .btn {
+            width: 50%;
+        }
+    }
+}
+
+.dropdown-menu > .dropdown-menu__inner > li > a {
+    display: block;
+    padding: 3px 20px 3px 2.25em;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.open > .dropdown-toggle.btn-default.custom-button {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+
+.dropdown-menu > .dropdown-menu__inner > li > a:hover {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+}
+
+.dropdown-menu > .dropdown-menu__inner > li > a.active,
+.dropdown-menu > .dropdown-menu__inner > li > a.active:hover,
+.dropdown-menu > .dropdown-menu__inner > li > a.active:focus {
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+    background-color: #e6e6e6 !important;
+}
+
+.dropdown-menu > .dropdown-menu__inner > li > a.active .select-id {
+    border: 1px solid #969696;
+}
+
+.dropdown-menu > .dropdown-menu__inner > li > a.active:focus,
+.dropdown-menu > .dropdown-menu__inner > li > a.active:hover {
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.dropdown-menu > .dropdown-menu__inner > li > a:focus {
+    text-decoration: none;
+}
+
+.copyRates__fromUsers,
+.copyRates__fromCol {
+    .dropdown-menu.dropdown-menu__filters.dropdown-menu__filters-for-custom {
+        max-height: 341px !important;
+
+        .dropdown-menu__inner {
+            max-height: 260px !important;
+        }
+    }
+}
+
+body.dark-mode {
+    .menu-item-no_result a {
+        color: rgb(206, 206, 206) !important;
+        background-color: #2e3036 !important;
+    }
+
+    .dropdown-menu__inner .menu-item.disabled {
+        a {
+            color: #464951;
+
+            &:hover {
+                background-color: transparent !important;
+
+                span {
+                    color: #464951 !important;
+                    background-color: transparent !important;
+                }
+            }
+
+            span {
+                color: #464951 !important;
+                background-color: transparent !important;
+            }
+
+            &.active {
+                cursor: not-allowed;
+                color: #464951;
+                background-color: transparent !important;
+
+                &:hover {
+                    color: #464951;
+                    background-color: transparent !important;
+
+                    span {
+                        color: #464951 !important;
+                        background-color: transparent !important;
+                    }
+                }
+
+                .select-id {
+                    border: 1px solid #ddd;
+                }
+            }
+        }
+    }
+
+    .add-rates__form .dropdown-menu > .dropdown-menu__inner > li.disabled > a.active {
+        background-color: transparent !important;
+
+        span {
+            color: #464951 !important;
+            background-color: transparent !important;
+        }
+
+        .select-id {
+            border: solid 1px rgba(103, 107, 118, 0.5);
+        }
+    }
+}

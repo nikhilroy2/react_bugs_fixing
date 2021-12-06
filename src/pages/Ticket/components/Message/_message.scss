@@ -1,0 +1,102 @@
+.self::before {
+    content: ' ';
+    position: absolute;
+    border: 12px solid transparent;
+    border-top: 14px solid #dff0d8;
+    right: 18px;
+}
+.notSelf::before {
+    content: ' ';
+    position: absolute;
+    left: 18px;
+    border: 12px solid transparent;
+    border-top: 14px solid rgb(217, 237, 247);
+}
+.my {
+    margin-left: 40px;
+}
+.notMy {
+    margin-right: 40px;
+}
+.ticketMessage {
+    padding: 0 30px 0px 30px;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 767px) {
+    .ticketMessage {
+        padding: 0 15px;
+    }
+    .notSelf::before {
+        left: 4px;
+    }
+    .self::before {
+        right: 4px;
+    }
+    .details_buttonRight {
+        margin-left: -12px;
+    }
+}
+.ticketMessage__head {
+    padding: 5px 7px;
+
+    p {
+        margin: 0;
+        margin-top: 3px;
+        float: right;
+    }
+
+    strong {
+        margin-left: 1px;
+    }
+}
+.ticketMessage__head__date {
+    text-align: right;
+    color: #a7a7a7;
+    font-size: 12px;
+    position: relative;
+    bottom: 20px;
+}
+.ticketMessage__body__message {
+    border: none;
+    box-shadow: 0 1px 1px 0 #bdbdbd;
+    -webkit-box-shadow: 0 1px 1px 0 #bdbdbd;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.ticketMessage__body__message_blue {
+    background-color: rgb(217, 237, 247);
+    border: none;
+}
+.ticketMessage__body__message_green {
+    background-color: #dff0d8;
+    border: none;
+}
+.ticketMessage_body_messageText {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.ticketMessage__footer {
+    margin-top: 5px;
+}
+.ticketMessage__footer__status {
+    float: right;
+    font-size: 12px;
+    color: #949494;
+    margin: 0;
+    margin-right: 7px;
+}
+.ticketMessage__footer__dot {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #333;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    left: 36px;
+    top: 9px;
+    z-index: 10;
+}
+.ticketMessage__footer__link__edit {
+    margin-left: -1px;
+}

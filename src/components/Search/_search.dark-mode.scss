@@ -1,0 +1,15 @@
+.dark-mode {
+    
+    .customSearchButton {
+        color: #7b808e !important;
+        
+        &:hover {
+            background-color: #222327 !important;
+            border-color: rgba(103,107,118,.5) !important;
+        }
+    }
+
+    .search-select {
+        border-left: none !important;
+    }
+}

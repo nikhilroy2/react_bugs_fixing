@@ -1,0 +1,110 @@
+.select__selectedGlyph {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+.select__menuItem {
+    position: relative;
+}
+
+ul > .select__empty,
+.select__empty:hover,
+.select__empty:hover a {
+    background-color: #fff !important;
+    cursor: default;
+}
+
+.select__wideButton {
+    text-align: left;
+}
+
+.select__wideButton + ul {
+    width: 100% !important;
+}
+
+.dropdown > .select__wideButton {
+    width: 100% !important;
+}
+
+.select__wrapper,
+.select__wrapper .dropdown,
+.select__wideMenuItem {
+    width: 100% !important;
+}
+
+.select__wideButton .caret {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.select__empty {
+    color: #999;
+    border-color: #ccc;
+
+    &:hover {
+        color: #999;
+    }
+}
+
+.select__button {
+    cursor: pointer !important;
+}
+
+.select__button:hover {
+    background-color: #e6e6e6 !important;
+    border-color: #adadad !important;
+}
+
+.select__opened,
+.select__opened:hover {
+    color: #333;
+    background-color: #e6e6e6 !important;
+    border-color: #adadad !important;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.select__wrapper {
+    &.select__wrapper-request {
+        .dropdown-menu {
+            min-width: 542px;
+            max-height: 786px;
+            overflow: hidden;
+
+            .select__header {
+                display: block;
+                padding: 3px 20px;
+                font-size: 12px;
+                line-height: 1.42857143;
+                color: #777;
+                white-space: nowrap;
+            }
+
+            .select__menuItem {
+                position: relative;
+
+                a {
+                    padding-left: 2.25em !important;
+                }
+            }
+        }
+
+        .request__status {
+            padding: 0 10px;
+            // margin-top: 10px;
+        }
+
+        .request__menuItem {
+            a {
+                padding: 3px 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .select__wrapper.select__wrapper-request .dropdown-menu {
+        min-width: 100%;
+    }
+}

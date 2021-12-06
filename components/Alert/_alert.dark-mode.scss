@@ -1,0 +1,38 @@
+.dark-mode {
+    .customAlertcomponent,
+    .customAlertcomponent * {
+        background-color: #ff5e5e !important;
+        border-color: #ff5e5e !important;
+        color: #fff;
+    }
+
+    .customAlertcomponent.alert-success {
+        color: #9cd25a !important;
+        border-color: transparent !important;
+        background-color: rgba(121, 161, 73, 0.8) !important;
+
+        span {
+            color: #9cd25a !important;
+            border-color: rgba(121, 161, 73, 0.8) !important;
+            background-color: transparent !important;
+        }
+
+        .close {
+            border-color: rgba(121, 161, 73, 0.8) !important;
+            background-color: transparent !important;
+            color: #fff !important;
+            opacity: 0.8;
+            line-height: 16px;
+
+            span {
+                color: #fff !important;
+                border-color: rgba(121, 161, 73, 0.8) !important;
+                background-color: transparent !important;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

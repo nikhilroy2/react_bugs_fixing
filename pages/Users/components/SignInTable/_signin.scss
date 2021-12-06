@@ -1,0 +1,10 @@
+.table__signin {
+    & > thead > tr > th,
+    & > tbody > tr > td {
+        line-height: 1.42857143;
+    }
+}
+
+.history__pagination {
+    margin-bottom: 0;
+}

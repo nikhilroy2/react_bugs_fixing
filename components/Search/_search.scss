@@ -1,0 +1,80 @@
+@media (max-width: 768px) {
+    .customSearch .input-group {
+        padding-right: 38px;
+    }
+
+    .form-inline .input-group .input-group-addon,
+    .form-inline .input-group .input-group-btn,
+    .form-inline .input-group .form-control {
+        height: auto;
+        min-height: 34px;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-inline .input-group .input-group-addon,
+    .form-inline .input-group .input-group-btn,
+    .form-inline .input-group .form-control {
+        width: auto;
+        height: auto;
+        min-height: 34px;
+    }
+}
+
+.nav.nav-tabs li .btn.btn-default {
+    min-height: 34px;
+}
+
+.customSearch {
+    .form-group {
+        margin-bottom: 0;
+    }
+}
+
+.customSearchButton {
+    min-height: 34px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.search-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    position: relative;
+    cursor: pointer;
+    border-left: none;
+
+    &:focus {
+        border-left: 1px solid #66afe9;
+    }
+}
+
+.selectWrapper {
+    position: relative;
+}
+
+.selectWrapper::before {
+    content: '\f0d7';
+    position: absolute;
+    display: inline-block;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 12px;
+    right: 9px;
+    top: -5px;
+    z-index: 1000;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 768px) {
+    .search-select {
+        min-width: 105px;
+    }
+}

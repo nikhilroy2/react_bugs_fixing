@@ -1,0 +1,111 @@
+@import '../../assets/scss/colors.scss';
+
+.dark-mode {
+    .navbar {
+        background-color: #141418;
+        border-bottom-color: $gray;
+
+        .navLink {
+            &:hover {
+                background-color: transparent;
+
+                a {
+                    color: #a7b0c7;
+                }
+            }
+            a {
+                color: #878ea0;
+            }
+        }
+
+        .navbar-collapse {
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                background-color: #222327;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar {
+                width: 8px;
+                background-color: #222327;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                background-color: #3f4149;
+            }
+        }
+
+        .activeNavLink {
+            background-color: rgba(40, 42, 47, 0.5);
+
+            a {
+                color: $white !important;
+
+                &:hover {
+                    background-color: rgba(40, 42, 47, 0.5) !important;
+                    color: $white !important;
+                }
+            }
+        }
+
+        .navbar-right {
+            li {
+                a {
+                    color: #878ea0;
+                }
+            }
+
+            .navbar-item-mode {
+                a .fa-sun {
+                    color: #878ea0;
+                }
+
+                a:hover {
+                    background-color: transparent;
+
+                    .fa-sun {
+                        color: #a7b0c7;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        .dropdown-menu {
+            border-color: $grayLighter;
+            li {
+                &:hover {
+                    background-color: #2e3036;
+                }
+
+                a {
+                    color: $white !important;
+                }
+            }
+            .activeNavLink {
+                background-color: #2e3036;
+            }
+        }
+
+        .navLink-drop a:visited,
+        .navLink-drop a {
+            color: $white !important;
+        }
+
+        .dropdown-toggle {
+            background-color: transparent !important;
+            color: #878ea0;
+
+            &:hover {
+                color: #a7b0c7;
+                background-color: transparent;
+            }
+        }
+    }
+}

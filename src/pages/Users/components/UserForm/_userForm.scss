@@ -1,0 +1,61 @@
+.userFormPayments {
+    margin-top: 2px;
+    margin-bottom: 11px;
+
+    & > label {
+        height: 10px !important;
+    }
+
+    & > label > .checkbox {
+        margin: -2px -2px 0 0 !important;
+    }
+
+    * {
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    label {
+        display: inline;
+        cursor: pointer;
+
+        * {
+            cursor: pointer;
+        }
+    }
+
+    .checkbox {
+        margin: 0 !important;
+        margin-bottom: 3px !important;
+    }
+
+    .checkbox + label {
+        margin-right: 14px;
+        margin-left: -2px;
+    }
+    
+}
+
+.checkboxInvisible {
+    color: #c1c1c1 !important;
+}
+
+.userForm {
+    .inputGenerate__input {
+        cursor: text;
+    }
+}
+
+.userFormTooltip {
+    max-width: 70px;
+}
+
+.checkboxInvisible {
+    input {
+        background-color: #2e3036 !important;
+    }
+}
+
+.paymentLabel {
+    margin-bottom: 10px;
+}

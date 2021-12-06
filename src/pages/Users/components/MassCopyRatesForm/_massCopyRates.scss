@@ -1,0 +1,71 @@
+.copyRates__toUsers .control-label,
+.copyRates__fromUsers .control-label {
+    display: block;
+}
+
+.copyRates__fromUsers .dropdown,
+.copyRates__fromUsers .dropdown-menu,
+.copyRates__fromUsers .dropdown-toggle {
+    min-width: 100%;
+}
+
+.copyRates__fromUsers .dropdown-toggle {
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.notSelected {
+    .dropdown-toggle,
+    .dropdown::before {
+        color: #999;
+    }
+}
+
+.copyRates__toUsers {
+    select {
+        height: 180px;
+    }
+}
+
+.copyRates__fromUsers {
+    position: relative;
+
+    .dropdown-menu__filters-for-custom .dropdown-menu__inner {
+        max-height: 260px;
+    }
+
+    .dropdown::before {
+        content: ' ';
+        position: absolute;
+        z-index: 1000;
+        border-top: 4px dashed;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        top: 15px;
+        right: 12px;
+        cursor: pointer;
+    }
+
+    .select-id,
+    .divider,
+    .dropdown-header {
+        display: none !important;
+    }
+}
+
+.massCopyRates__arrow {
+    position: absolute;
+    z-index: 100;
+    top: 36px;
+    right: -8px;
+}
+
+@media screen and (max-width: 991px) {
+    .massCopyRates__arrow {
+        display: none;
+    }
+
+    .copyRates__toUsers label {
+        margin-top: 16px;
+    }
+}

@@ -1,0 +1,194 @@
+body.dark-mode {
+    .add-rates__service-block {
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #222327;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 8px;
+            background-color: #222327;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #3f4149;
+        }
+    }
+    
+    .add-rates__service-block .item__row {
+        border-top-color: rgba(103, 107, 118, 0.5);
+
+        &:hover {
+            background-color: #27282d !important;
+        }
+
+        .input-group-btn {
+            .btn {
+                &:hover {
+                    border-color: rgba(103, 107, 118, 0.5);
+                }
+            }
+        }
+    }
+
+    .item__row .item__selected-info .item__id {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        border: solid 1px rgba(103, 107, 118, 0.5);
+        background-color: #141418;
+    }
+
+    .add-rates__service-block .rate__input .rate__delete {
+        color: #dfe0e1;
+        border: none;
+        background: unset;
+        border: none;
+        box-shadow: none;
+    }
+
+    .custom-button .filter-options {
+        background-color: #141418;
+    }
+
+    .custom-button:hover .filter-options {
+        background-color: #222327;
+    }
+
+    .add-rates__form .form-group.add-rates__input .add-rates__filter-icon::before {
+        color: #7b808e;
+    }
+
+    .add-rates__form {
+        .menu-item a:hover,
+        .menu-item a:hover span,
+        .dropdown-header-select a:hover,
+        .dropdown-menu__inner > li > a:hover {
+            background-color: #2e3036 !important;
+            color: #fff;
+        }
+
+        .input-group {
+            .input__rates-provider-value {
+                background-color: #2e3036 !important;
+            }
+        }
+
+        .dropdown-menu .divider {
+            background-color: #3f4149;
+        }
+
+        .dropdown-header-select {
+            a {
+                background-color: #2e3036 !important;
+
+                &:hover {
+                    color: #dfe0e1 !important;
+                }
+            }
+        }
+
+        .dropdown-header-select.not-empty a {
+            background-color: transparent !important;
+            color: #fff !important;
+        }
+
+        .menu-item .select-id {
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            border: solid 1px rgba(103, 107, 118, 0.5);
+            background-color: #141418 !important;
+
+            &:hover {
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+                border: solid 1px rgba(103, 107, 118, 0.5);
+                background-color: #141418 !important;
+            }
+        }
+
+        .dropdown-header {
+            background-color: #222327;
+            display: block;
+            padding: 3px 20px;
+            font-size: 12px;
+            line-height: 1.42857143;
+            color: #777;
+            white-space: nowrap;
+
+            span {
+                background-color: #222327;
+                display: block;
+                font-size: 12px;
+                line-height: 1.42857143;
+                color: #777;
+                white-space: nowrap;
+            }
+        }
+
+        .open > .dropdown-toggle.btn-default.custom-button {
+            background-color: #222327 !important;
+            color: #fff;
+        }
+
+        .add-rates__select-btn .dropdown-menu__filters-for-custom .dropdown-menu__inner {
+            background-color: #222327 !important;
+        }
+
+        .dropdown-menu,
+        .menu-item a,
+        .menu-item a span,
+        .dropdown-menu__input {
+            background-color: #222327 !important;
+        }
+
+        .menu-item a:hover {
+            color: #dfe0e1 !important;
+
+            .select-id {
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+                border: solid 1px rgba(103, 107, 118, 0.5);
+                background-color: #141418 !important;
+            }
+
+            span {
+                color: #dfe0e1 !important;
+            }
+        }
+
+        .dropdown-menu > .dropdown-menu__inner > li > a.active,
+        .dropdown-menu > .dropdown-menu__inner > li > a.active span {
+            background-color: #2e3036 !important;
+            color: rgb(206, 206, 206);
+        }
+
+        .dropdown-menu > .dropdown-menu__inner > li > a.active .select-id {
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            border: 1px solid #969696;
+            background-color: #141418 !important;
+        }
+
+        .filter-options {
+            background-color: transparent !important;
+        }
+    }
+
+    .bg-enter {
+        background-color: #2e3036 !important;
+        z-index: 10;
+    }
+
+    .bg-enter-active {
+        background-color: #fff !important;
+        -webkit-transition: background-color 2s;
+        transition: background-color 2s;
+        z-index: 10;
+
+        .rate__delete {
+            box-shadow: none;
+        }
+    }
+}

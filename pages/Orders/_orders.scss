@@ -1,0 +1,75 @@
+.table__orders {
+    .refill-link {
+        white-space: normal !important;
+        word-break: break-all;
+        min-width: 300px;
+
+        span {
+            margin-right: 6px;
+        }
+
+        .link-to-refill {
+            opacity: 0;
+            font-size: 12px;
+        }
+
+        .refill-button {
+            margin-right: 6px;
+        }
+    }
+
+    .order__link {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .service__row {
+        white-space: normal !important;
+        word-break: break-all;
+        min-width: 200px;
+    }
+
+    .service__id {
+        border: 1px solid #ddd;
+        background: none;
+        min-width: 30px;
+        display: inline-block;
+        padding: 0.2em 0.6em 0.3em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: 1px;
+        border-radius: 0.25em;
+        margin-right: 5px;
+    }
+
+    tbody {
+        tr {
+            td {
+                &:nth-last-child(3) {
+                    white-space: normal;
+                }
+
+                .orders-pay-hash {
+                    word-break: break-all;
+                }
+
+                .label-api {
+                    background-color: #aaa;
+                    font-size: 9px;
+                    text-transform: uppercase;
+                    margin-left: 2px;
+                }
+            }
+
+            &:hover {
+                .link-to-refill {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

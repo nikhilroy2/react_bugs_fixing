@@ -1,0 +1,301 @@
+.add-custom__row {
+    margin-bottom: 9px;
+
+    .add-rates__select-btn {
+        .custom-button {
+            &:focus {
+                outline: 5px auto -webkit-focus-ring-color !important;
+                outline-offset: -2px;
+            }
+        }
+
+        .dropdown-menu__inner {
+            .dropdown-header {
+                padding-left: 15px;
+            }
+
+            .menu-item {
+                a {
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}
+
+.add-rates__form {
+    .custom-button {
+        width: auto;
+        line-height: 1.42857143;
+    }
+
+    .form-group {
+        float: right !important;
+
+        .input-group .form-control:first-child {
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+
+        &.add-rates__input {
+            position: relative;
+            min-width: 221px;
+
+            .add-rates__search {
+                padding: 6px 24px 6px 25px;
+            }
+
+            .add-rates__filter-icon::before {
+                position: absolute;
+                left: 8px;
+                top: 8px;
+                color: #999;
+                z-index: 3;
+                content: '\f002';
+                display: inline-block;
+                font-family: 'Font Awesome 5 Pro';
+                font-size: inherit;
+                font-weight: 400;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .add-rates__clear-icon::before {
+                content: '\f00d';
+                font-family: 'Font Awesome 5 Pro';
+                font-weight: 900;
+                position: absolute;
+                cursor: pointer;
+                width: 15px;
+                height: 18px;
+                color: rgb(170, 170, 170);
+                top: 7px;
+                right: 7px;
+                display: block;
+            }
+        }
+    }
+
+    .dropdown-menu__input.form-group {
+        float: none !important;
+    }
+}
+
+.add-rates__service-block {
+    position: relative;
+    margin-bottom: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 451px;
+
+    .item__row {
+        border-bottom: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 0;
+        margin-right: 0;
+
+        &:hover {
+            background: #f9f9f9;
+        }
+
+        &:first-child {
+            margin-bottom: 0px;
+            border-top: 1px solid #ddd;
+            -webkit-border-top-left-radius: 4px;
+            -webkit-border-top-right-radius: 4px;
+            -moz-border-radius-topleft: 4px;
+            -moz-border-radius-topright: 4px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+            -webkit-border-bottom-right-radius: 4px;
+            -webkit-border-bottom-left-radius: 4px;
+            -moz-border-radius-bottomright: 4px;
+            -moz-border-radius-bottomleft: 4px;
+            border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        .item__selected-info {
+            position: relative;
+            padding-right: 50px;
+            padding-left: 45px;
+            padding-top: 7px;
+            padding-bottom: 3px;
+            border-radius: 4px;
+
+            .item__id {
+                position: absolute;
+                left: 0;
+                top: 10px;
+                border: 1px solid #ddd;
+                background: 0 0;
+                min-width: 30px;
+                display: inline-block;
+                padding: 0.2em 0.6em 0.3em;
+                font-size: 75%;
+                font-weight: 700;
+                line-height: 1;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: 1px;
+                border-radius: 0.25em;
+            }
+
+            .item__old-rate {
+                position: absolute;
+                right: 0;
+            }
+
+            .item__rates-name {
+                max-width: 540px;
+                overflow: hidden;
+                height: 23px;
+            }
+        }
+    }
+
+    .input-group-btn {
+        .btn {
+            min-height: 42px;
+            height: 42px;
+            width: 40px;
+            min-width: 40px;
+        }
+    }
+
+    .form-group__convert {
+        float: none !important;
+
+        .input-group {
+            .form-control {
+                padding-top: 0;
+                padding-bottom: 10px;
+                height: 42px;
+                min-height: 42px;
+                width: 100%;
+            }
+
+            .input__rates-provider-value {
+                font-size: 11px;
+                color: #b3b3b3;
+                position: absolute;
+                z-index: 10;
+                bottom: 3px;
+                left: 14px;
+            }
+        }
+    }
+
+    .rate__input {
+        padding-right: 30px;
+
+        .rate__delete {
+            color: #333;
+            padding: 7px 0;
+            position: absolute;
+            right: 16px;
+            top: 4px;
+            background: none;
+            border-color: transparent;
+
+            &:hover {
+                color: #23527c;
+            }
+
+            &:focus {
+                outline: none;
+                background: transparent;
+                box-shadow: none;
+            }
+
+            &:active {
+                outline: none;
+                background: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .add-rates__form {
+        margin-bottom: 18px;
+
+        .form-group__convert {
+            width: 100%;
+            margin-top: 5px;
+
+            .input-group {
+                width: 98%;
+
+                .input-group-btn {
+                    width: 38px !important;
+                }
+
+                .input__rates-provider-value {
+                    bottom: 2px;
+                    left: 14px;
+                }
+            }
+        }
+
+        .form-group {
+            width: 100%;
+        }
+
+        .add-rates__service-block .rate__input .rate__delete {
+            top: 4px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .add-rates__form {
+        .form-group {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .form-group__convert {
+            width: 100%;
+            margin-top: -5px;
+            margin-bottom: 5px;
+
+            .input-group {
+                width: 98%;
+
+                .input-group-btn {
+                    width: 38px !important;
+                }
+
+                .input__rates-provider-value {
+                    bottom: 12px;
+                    left: 14px;
+                }
+            }
+        }
+
+        .add-rates__service-block .rate__input .rate__delete {
+            top: 14px;
+        }
+    }
+}
+
+.bg-enter {
+    background-color: #fff;
+}
+
+.bg-enter-active {
+    background-color: rgb(221, 237, 246);
+    -webkit-transition: background-color 2s;
+    transition: background-color 2s;
+}

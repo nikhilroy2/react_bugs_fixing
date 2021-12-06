@@ -1,0 +1,15 @@
+.dark-mode {
+    .inputGenerateGroup {
+        .input-group-addon {
+            background-color: #141418;
+
+            &:hover {
+                background-color: #222327;
+            }
+
+            .glyphicon {
+                color: #fff;
+            }
+        }
+    }
+}

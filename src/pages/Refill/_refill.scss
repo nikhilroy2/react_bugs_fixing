@@ -1,0 +1,73 @@
+.table__refill {
+  .refill-link {
+    td {
+      white-space: normal !important;
+      border-top: none;
+      word-break: break-all;
+      max-width: 430px;
+
+      span {
+        margin-right: 6px;
+      }
+
+      .link-to-refill {
+        opacity: 0;
+      }
+
+      &:hover {
+        .link-to-refill {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .order__link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .service__row {
+    white-space: normal !important;
+    word-break: break-all;
+    min-width: 200px;
+  }
+
+  .service__id {
+    border: 1px solid #ddd;
+    background: none;
+    min-width: 30px;
+    display: inline-block;
+    padding: 0.2em 0.6em 0.3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: 1px;
+    border-radius: 0.25em;
+    margin-right: 5px;
+  }
+
+  .refill-count {
+    .refill-count__tooltip {
+      font-size: 14px;
+      vertical-align: middle;
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        &:nth-last-child(3) {
+          white-space: normal;
+        }
+      }
+    }
+  }
+}
+
+.LanguageSelector {
+  margin-bottom: 20px;
+}

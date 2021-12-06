@@ -1,0 +1,23 @@
+@import '../../assets/scss/colors.scss';
+
+.dark-mode {
+    .users__mass-act {
+        background-color: #27282d;
+    }
+
+    .users__head .check-all .check-all__box {
+        border-color: rgba(103, 107, 118, 0.5);
+    }
+
+    .grey {
+        color: #464951;
+    }
+
+    .td-caret .dropdown-right .dropdown .fontWieghtMed {
+        line-height: 1.5;
+    }
+
+    .table thead tr th a {
+        color: #dfe0e1;
+    }
+}

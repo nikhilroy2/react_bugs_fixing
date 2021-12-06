@@ -1,0 +1,157 @@
+.dark-mode {
+    .react-calendar {
+        background-color: #222327;
+        border: 1px solid rgba(103, 107, 118, 0.5) !important;
+
+        &:before {
+            background-color: #222327;
+            border: 1px solid rgba(103, 107, 118, 0.5) !important;
+            border-right: transparent !important;
+            border-bottom: transparent !important;
+        }
+
+        *,
+        .react-calendar__navigation {
+            background-color: #222327 !important;
+        }
+
+        .react-calendar__navigation * {
+            background-color: #222327 !important;
+            z-index: 100;
+        }
+
+        button:hover {
+            background-color: #2d2d30 !important;
+
+            * {
+                background-color: #2d2d30 !important;
+            }
+        }
+
+        .react-calendar__month-view__days__day--weekend {
+            color: white;
+        }
+
+        .react-calendar__month-view__days__day--neighboringMonth {
+            color: #878ea0;
+        }
+
+        .react-calendar__tile--active,
+        .react-calendar__tile--active abbr {
+            background-color: #1e73d0 !important;
+
+            &:hover {
+                background-color: #1e73d0 !important;
+            }
+
+            // * {
+            //     background-color: #1e73d0 !important;
+
+            //     &:hover {
+            //         background-color: #1e73d0 !important;
+            //     }
+            // }
+        }
+
+        .react-calendar__tile--hasActive {
+            background-color: #1e73d0 !important;
+
+            &:hover {
+                background-color: #1e73d0 !important;
+            }
+        }
+
+        .react-calendar__century-view__decades__decade[disabled],
+        .react-calendar__decade-view__years__year[disabled] {
+            color: #616368;
+            background-color: #222327 !important;
+        }
+
+        .react-calendar__tile--active {
+            abbr {
+                color: white;
+            }
+        }
+    }
+
+    .daterangepicker {
+        background-color: #222327;
+        border: 1px solid rgba(103, 107, 118, 0.5) !important;
+    }
+
+    .daterangepicker::after {
+        border-bottom: 6px solid #222327;
+    }
+
+    .daterangepicker::before {
+        border-bottom: 7px solid rgba(103, 107, 118, 0.5);
+    }
+
+    .daterangepicker .drp-calendar {
+        background-color: #222327;
+    }
+
+    .daterangepicker .drp-calendar .calendar-table {
+        background-color: #222327;
+        border: 1px solid #222327 !important;
+    }
+
+    .daterangepicker .drp-calendar .calendar-table .prev.available:hover {
+        background-color: #2d2d30 !important;
+    }
+
+    .daterangepicker .drp-calendar .calendar-table .prev.available span {
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+    }
+
+    .daterangepicker .drp-calendar .calendar-table .next.available:hover {
+        background-color: #2d2d30 !important;
+    }
+
+    .daterangepicker .drp-calendar .calendar-table .next.available span {
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+    }
+
+    .daterangepicker td.available:hover {
+        background-color: #2d2d30 !important;
+    }
+
+    .daterangepicker td.active {
+        background-color: #357ebd !important;
+    }
+
+    .daterangepicker td.active:hover {
+        background-color: #357ebd !important;
+    }
+
+    .daterangepicker td.in-range {
+        background-color: #aee6ff;
+    }
+
+    .daterangepicker td.in-range:hover {
+        background-color: #70d3ff !important;
+        color: #fff;
+    }
+
+    .daterangepicker td.end-date {
+        background-color: #357ebd !important;
+    }
+
+    .daterangepicker td.end-date:hover {
+        background-color: #357ebd !important;
+    }
+
+    .daterangepicker td.off {
+        background-color: transparent !important;
+    }
+
+    .daterangepicker td.off:hover {
+        background-color: transparent !important;
+    }
+
+    .daterangepicker .drp-buttons {
+        border-top: 1px solid rgba(103, 107, 118, 0.5) !important;
+    }
+}

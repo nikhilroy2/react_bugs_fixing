@@ -1,0 +1,293 @@
+// @import './dark-mode.scss';
+// @import '../../vendors/scss/variables';
+// @import '../../vendors/scss/mixins';
+// @import '../../vendors/scss/animated';
+// @import '../../vendors/scss/bordered-pulled';
+// @import '../../vendors/scss/core';
+// @import '../../vendors/scss/larger';
+// @import '../../vendors/scss/list';
+// @import '../../vendors/scss/rotated-flipped';
+// @import '../../vendors/scss/screen-reader';
+// @import '../../vendors/scss/shims';
+// @import '../../vendors/scss/stacked';
+// @import '../../vendors/scss/brands.scss';
+// @import '../../vendors/scss/duotone.scss';
+// @import '../../vendors/scss/fontawesome.scss';
+// @import '../../vendors/scss/light.scss';
+// @import '../../vendors/scss/regular.scss';
+// @import '../../vendors/scss/solid.scss';
+// @import '../../vendors/scss/v4-shims.scss';
+// @import '../../vendors/bootstrap/assets/stylesheets/_bootstrap.scss';
+
+/* Hide spin for input number Chrome, Safari, Edge, Opera */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide spin for input number Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a[role='menuitem'] {
+  outline: none !important;
+}
+
+.p-l {
+  padding-left: 15px !important;
+}
+
+.p-b {
+  padding-bottom: 15px !important;
+}
+
+.m-b {
+  margin-bottom: 15px !important;
+}
+
+.m-l {
+  margin-left: 15px !important;
+}
+
+.m-t-0 {
+  margin-top: 0 !important;
+}
+
+.p-t-0 {
+  padding-top: 0 !important;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+.nowrap {
+  white-space: nowrap;
+  display: block;
+}
+
+.border-none {
+  border-top-color: transparent !important;
+}
+
+.dropdown-toggle:focus {
+  outline: 0;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+.nav a:visited {
+  color: inherit;
+}
+
+.nav-tabs__search .form-inline .form-group {
+  margin-bottom: 0;
+}
+
+.table thead tr th a {
+  color: #333;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.table > tbody > tr > td {
+  line-height: 1.42857143;
+}
+
+// Table grey
+.table.table-grey > thead > tr > th {
+  vertical-align: middle;
+  height: 45px;
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #ddd;
+}
+
+.table.table-grey {
+  .tickets__mass-act {
+    background-color: #f8f8f8;
+    height: 40px;
+  }
+
+  .check-all.check-all__show {
+    .check-all__box {
+      background-color: #fff;
+    }
+
+    .mass-act__list {
+      background-color: #fff;
+      margin-top: 8px;
+    }
+  }
+
+  .refill-link {
+    td {
+      border-top: none;
+    }
+  }
+
+  tr.active + tr {
+    background: #f5f5f5;
+  }
+}
+
+.table-grey > tbody > tr > td {
+  padding: 5px 8px;
+}
+
+@-moz-document url-prefix() {
+  .table.table-grey .check-all.check-all__show .mass-act__list {
+    margin-top: 9px;
+  }
+}
+
+.td-caret {
+  padding-right: 15px !important;
+  width: 24px;
+}
+
+.btn-link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn:focus,
+.btn:hover {
+  outline: 0;
+}
+
+.btn-disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.nav-tabs {
+  & li:first-child button {
+    line-height: 1.42857143;
+  }
+
+  .btn-link {
+    margin-right: 6px;
+    outline: none;
+
+    &:active:focus,
+    &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+  }
+
+  li {
+    a {
+      height: 34px;
+      min-height: 34px;
+    }
+  }
+}
+
+body {
+  padding-top: 65px;
+  padding-bottom: 30px;
+  line-height: 1.42857143;
+}
+
+@media (max-width: 768px) {
+  .nav-tabs > li {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+}
+
+.modal-loader {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  // background: rgba(255, 255, 255, 0.8) url('../img/ajax-loader.gif') 50% 50% no-repeat;
+}
+
+.small-loader {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  // background: rgba(255, 255, 255, 0.8) url('../img/ajax-loader-small.gif') 50% 50% no-repeat;
+}
+
+.modal-loader-small {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  // background: rgba(255, 255, 255, 0.8) url('../img/ajax-loader-30x30.gif') 50% 50% no-repeat;
+}
+
+body.dark-mode .modal-loader-small {
+  // background: rgba(34, 35, 39, 0.8) url('../img/ajax-loader-dark-mode-30x30.gif') 50% 50% no-repeat;
+}
+
+.table-loader {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  // background: rgba(255, 255, 255, 0.8) url('../img/ajax-loader.gif') 50% 50% no-repeat;
+}
+
+body.dark-mode .table-loader {
+  // background: rgba(34, 35, 39, 0.8) url('../img/ajax-loader-dark-mode.gif') 50% 50% no-repeat;
+}
+
+.modal-dialog {
+  left: -8px;
+}
+
+.table tr th .request__button + .dropdown-menu {
+  left: auto;
+  max-height: 410px;
+  overflow-y: auto;
+}
+
+.loader__li {
+  min-height: 22px;
+  height: 22px;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    left: -2px;
+  }
+}

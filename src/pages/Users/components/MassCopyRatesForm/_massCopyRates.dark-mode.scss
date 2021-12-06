@@ -1,0 +1,58 @@
+.dark-mode {
+    .notSelected button span,
+    .notSelected.copyRates__fromInput {
+        color: #999 !important;
+    }
+
+    .copyRates__fromUsers {
+        .menu-item a:hover,
+        .menu-item a:hover span,
+        .dropdown-header-select a:hover,
+        .dropdown-menu__inner > li > a:hover {
+            background-color: #2e3036 !important;
+            color: #fff;
+        }
+
+        .copyRates__toInput {
+            background-color: #1b1c20 !important;
+            color: #464951 !important;
+        }
+
+        .open > .dropdown-toggle.btn-default.custom-button {
+            background-color: #222327 !important;
+            color: #fff;
+        }
+
+        .dropdown-menu,
+        .menu-item a,
+        .menu-item a span,
+        .dropdown-menu__input {
+            background-color: #222327 !important;
+        }
+
+        .dropdown-header-select a {
+            background-color: #2e3036 !important;
+        }
+
+        .dropdown-header-select.not-empty a {
+            color: rgb(206, 206, 206) !important;
+            background-color: transparent !important;
+        }
+
+        .dropdown-menu > .dropdown-menu__inner > li > a.active,
+        .dropdown-menu > .dropdown-menu__inner > li > a.active span {
+            background-color: #2e3036 !important;
+            color: rgb(206, 206, 206);
+        }
+
+        .filter-options {
+            background-color: transparent !important;
+        }
+    }
+
+    .copyRates__toUsers {
+        select {
+            background-color: #1b1c20 !important;
+        }
+    }
+}
