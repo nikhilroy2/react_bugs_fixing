@@ -1,23 +1,24 @@
-@import './dark-mode.scss';
-@import '../../vendors/scss/variables';
-@import '../../vendors/scss/mixins';
-@import '../../vendors/scss/animated';
-@import '../../vendors/scss/bordered-pulled';
-@import '../../vendors/scss/core';
-@import '../../vendors/scss/larger';
-@import '../../vendors/scss/list';
-@import '../../vendors/scss/rotated-flipped';
-@import '../../vendors/scss/screen-reader';
-@import '../../vendors/scss/shims';
-@import '../../vendors/scss/stacked';
-@import '../../vendors/scss/brands.scss';
-@import '../../vendors/scss/duotone.scss';
-@import '../../vendors/scss/fontawesome.scss';
-@import '../../vendors/scss/light.scss';
-@import '../../vendors/scss/regular.scss';
-@import '../../vendors/scss/solid.scss';
-@import '../../vendors/scss/v4-shims.scss';
-@import '../../vendors/bootstrap/assets/stylesheets/_bootstrap.scss';
+// nikhil
+// @import './dark-mode.scss';
+// @import '../../vendors/scss/variables';
+// @import '../../vendors/scss/mixins';
+// @import '../../vendors/scss/animated';
+// @import '../../vendors/scss/bordered-pulled';
+// @import '../../vendors/scss/core';
+// @import '../../vendors/scss/larger';
+// @import '../../vendors/scss/list';
+// @import '../../vendors/scss/rotated-flipped';
+// @import '../../vendors/scss/screen-reader';
+// @import '../../vendors/scss/shims';
+// @import '../../vendors/scss/stacked';
+// @import '../../vendors/scss/brands.scss';
+// @import '../../vendors/scss/duotone.scss';
+// @import '../../vendors/scss/fontawesome.scss';
+// @import '../../vendors/scss/light.scss';
+// @import '../../vendors/scss/regular.scss';
+// @import '../../vendors/scss/solid.scss';
+// @import '../../vendors/scss/v4-shims.scss';
+// @import '../../vendors/bootstrap/assets/stylesheets/_bootstrap.scss';
 
 /* Hide spin for input number Chrome, Safari, Edge, Opera */
 input[type='number']::-webkit-outer-spin-button,
@@ -227,7 +228,7 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.8) url('../img/ajax-loader.gif') 50% 50% no-repeat;
+  // background: rgba(255, 255, 255, 0.8) url('../img/ajax-loader.gif') 50% 50% no-repeat; // nikhil
 }
 
 .small-loader {
@@ -238,7 +239,7 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.8) url('../img/ajax-loader-small.gif') 50% 50% no-repeat;
+  // background: rgba(255, 255, 255, 0.8) url('../img/ajax-loader-small.gif') 50% 50% no-repeat; // nikhil
 }
 
 .modal-loader-small {
@@ -249,11 +250,11 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.8) url('../img/ajax-loader-30x30.gif') 50% 50% no-repeat;
+  // background: rgba(255, 255, 255, 0.8) url('../img/ajax-loader-30x30.gif') 50% 50% no-repeat; // nikhil
 }
 
 body.dark-mode .modal-loader-small {
-  background: rgba(34, 35, 39, 0.8) url('../img/ajax-loader-dark-mode-30x30.gif') 50% 50% no-repeat;
+  // background: rgba(34, 35, 39, 0.8) url('../img/ajax-loader-dark-mode-30x30.gif') 50% 50% no-repeat; // nikhil
 }
 
 .table-loader {
@@ -264,11 +265,11 @@ body.dark-mode .modal-loader-small {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.8) url('../img/ajax-loader.gif') 50% 50% no-repeat;
+  // background: rgba(255, 255, 255, 0.8) url('../img/ajax-loader.gif') 50% 50% no-repeat; // nikhil
 }
 
 body.dark-mode .table-loader {
-  background: rgba(34, 35, 39, 0.8) url('../img/ajax-loader-dark-mode.gif') 50% 50% no-repeat;
+  // background: rgba(34, 35, 39, 0.8) url('../img/ajax-loader-dark-mode.gif') 50% 50% no-repeat; // nikhil
 }
 
 .modal-dialog {

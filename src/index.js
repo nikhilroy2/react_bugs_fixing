@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import * as Sentry from '@sentry/browser';
 
-import '../assets/scss/index.scss';
+import './assets/scss/index.scss';
 
 import App from './App';
 import reduxStore from './store';
