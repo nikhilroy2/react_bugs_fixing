@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { defaultRoutesArray } from '../services/routes';
+import { defaultRoutesArray } from './services/routes';
 
 const Main = () => (
   <Switch>

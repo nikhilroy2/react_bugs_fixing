@@ -4,16 +4,16 @@ import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { history } from './history';
 
-import ErrorBoundary from '../pages/ErrorBoundary';
-import Header from '../pages/Header';
-import NotFound from '../pages/404';
+import ErrorBoundary from './pages/ErrorBoundary';
+import Header from './pages/Header';
+import NotFound from './pages/404';
 
 import Main from './Main';
 
-import { getNavbarConfigAction } from '../redux/actions/header';
-import { getNavbarConfigSelector } from '../redux/selectors/header';
-import { ROUTES, defaultRoutesArray, routesSecondary } from '../services/routes';
-import { getAutorization } from '../redux/actions/general';
+import { getNavbarConfigAction } from './redux/actions/header';
+import { getNavbarConfigSelector } from './redux/selectors/header';
+import { ROUTES, defaultRoutesArray, routesSecondary } from './services/routes';
+import { getAutorization } from './redux/actions/general';
 
 const App = () => {
   const dispatch = useDispatch();

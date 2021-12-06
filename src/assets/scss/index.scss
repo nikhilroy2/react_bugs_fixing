@@ -1,5 +1,5 @@
 // nikhil
-// @import './dark-mode.scss';
+@import './dark-mode.scss';
 // @import '../../vendors/scss/variables';
 // @import '../../vendors/scss/mixins';
 // @import '../../vendors/scss/animated';
@@ -19,6 +19,7 @@
 // @import '../../vendors/scss/solid.scss';
 // @import '../../vendors/scss/v4-shims.scss';
 // @import '../../vendors/bootstrap/assets/stylesheets/_bootstrap.scss';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css';
 
 /* Hide spin for input number Chrome, Safari, Edge, Opera */
 input[type='number']::-webkit-outer-spin-button,

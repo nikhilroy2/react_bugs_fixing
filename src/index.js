@@ -9,8 +9,8 @@ import './assets/scss/index.scss';
 
 import App from './App';
 import reduxStore from './store';
-import { IS_PROD, DEV_PANELS } from '../utils/config';
-import { errorsIgnore, notAllowUrls } from '../utils/sentry-config';
+import { IS_PROD, DEV_PANELS } from './utils/config';
+import { errorsIgnore, notAllowUrls } from './utils/sentry-config';
 
 import './i18n';
 
